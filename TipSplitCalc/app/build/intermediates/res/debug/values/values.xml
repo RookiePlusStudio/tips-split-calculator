@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/colors_apptheme.xml -->
+    <eat-comment/>
+    <color name="apptheme_color">#4b7100</color>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/dimens_apptheme.xml -->
+    <eat-comment/>
+    <dimen name="tab_host_default_height">48dp</dimen>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="StringDefaultTips">15.0</string>
+    <string name="StringTaxHint">Input positive value to add tax to final result.\nNegative value to exclude tax from final result.</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">TipSplitCalc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="textButtonAdd">+</string>
+    <string name="textButtonMinus">-</string>
+    <string name="textShowBill">Bill Amount:</string>
+    <string name="textShowPpl">People:</string>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/themes_apptheme.xml -->
+    <eat-comment/>
+    <style name="AppTheme">
+
+    <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+
+    <item name="android:textColorHighlight">#994b7100</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonAppTheme</item>
+
+    <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+
+    <item name="android:listViewStyle">@style/ListViewAppTheme</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewAppTheme.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+
+  </style>
+    <!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/values/styles_apptheme.xml -->
+    <eat-comment/>
+    <style name="AutoCompleteTextViewAppTheme" parent="android:Widget.AutoCompleteTextView">
+      <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_dark</item>
+	  <item name="android:background">@drawable/apptheme_edit_text_holo_dark</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="ButtonAppTheme" parent="android:Widget.Button">
+	  <item name="android:background">@drawable/apptheme_btn_default_holo_dark</item>
+	  <item name="android:minHeight">48dip</item>
+	  <item name="android:minWidth">64dip</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="CheckBoxAppTheme" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/apptheme_btn_check_holo_dark</item>
+  </style>
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+	  <item name="android:background">@drawable/apptheme_edit_text_holo_dark</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="ImageButtonAppTheme" parent="android:Widget.ImageButton">
+	  <item name="android:background">@drawable/apptheme_btn_default_holo_dark</item>
+  </style>
+    <style name="ListViewAppTheme" parent="android:Widget.ListView">
+      <item name="android:listSelector">@drawable/apptheme_list_selector_holo_dark</item>
+  </style>
+    <style name="ListViewAppTheme.White" parent="android:Widget.ListView.White">
+      <item name="android:listSelector">@drawable/apptheme_list_selector_holo_dark</item>
+  </style>
+    <style name="ProgressBarAppTheme" parent="android:Widget.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/apptheme_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/apptheme_progress_indeterminate_horizontal_holo_dark</item>
+      <item name="android:minHeight">16dip</item>
+      <item name="android:maxHeight">16dip</item>
+  </style>
+    <style name="RadioButtonAppTheme" parent="android:Widget.CompoundButton.RadioButton">
+      <item name="android:button">@drawable/apptheme_btn_radio_holo_dark</item>
+  </style>
+    <style name="RatingBarAppTheme" parent="android:Widget.RatingBar">
+      <item name="android:progressDrawable">@drawable/apptheme_ratingbar_full_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/apptheme_ratingbar_full_holo_dark</item>
+  </style>
+    <style name="RatingBarBigAppTheme">
+      <item name="android:progressDrawable">@drawable/apptheme_ratingbar_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/apptheme_ratingbar_holo_dark</item>
+      <item name="android:minHeight">35dip</item>
+      <item name="android:maxHeight">35dip</item>
+  </style>
+    <style name="RatingBarSmallAppTheme">
+      <item name="android:progressDrawable">@drawable/apptheme_ratingbar_small_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/apptheme_ratingbar_small_holo_dark</item>
+      <item name="android:minHeight">16dip</item>
+      <item name="android:maxHeight">16dip</item>
+  </style>
+    <style name="SeekBarAppTheme" parent="android:Widget.SeekBar">
+      <item name="android:progressDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_dark</item>
+      <item name="android:minHeight">13dip</item>
+      <item name="android:maxHeight">13dip</item>
+      <item name="android:thumb">@drawable/apptheme_scrubber_control_selector_holo_dark</item>
+      <item name="android:thumbOffset">16dip</item>
+      <item name="android:paddingLeft">16dip</item>
+      <item name="android:paddingRight">16dip</item>
+  </style>
+    <style name="SpinnerAppTheme" parent="android:Widget.Spinner">
+      <item name="android:background">@drawable/apptheme_spinner_background_holo_dark</item>
+      <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_dark</item>
+  </style>
+    <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+      <item name="android:checkMark">@drawable/apptheme_btn_radio_holo_dark</item>
+  </style>
+    <style name="SpinnerItemAppTheme" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+      <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="TabAppTheme">
+      <item name="android:gravity">center_horizontal</item>
+      <item name="android:paddingLeft">16dip</item>
+      <item name="android:paddingRight">16dip</item>
+      <item name="android:background">@drawable/apptheme_tab_indicator_holo</item>
+      <item name="android:layout_width">0dip</item>
+      <item name="android:layout_weight">1</item>
+      <item name="android:minWidth">80dip</item>
+  </style>
+    <style name="TabTextAppTheme">
+	  <item name="android:textColor">#ffffff</item>
+      <item name="android:textSize">12sp</item>
+      <item name="android:textStyle">bold</item>
+      <!-- v14 <item name="android:textAllCaps">true</item> -->
+      <item name="android:ellipsize">marquee</item>
+      <item name="android:maxLines">2</item>
+      <item name="android:maxWidth">180dip</item>
+  </style>
+    <style name="ToggleAppTheme" parent="android:Widget.Button.Toggle">
+      <item name="android:background">@drawable/apptheme_btn_toggle_holo_dark</item>
+      <item name="android:minHeight">48dip</item>
+	  <item name="android:textColor">#ffffff</item>
+  </style>
+</resources>

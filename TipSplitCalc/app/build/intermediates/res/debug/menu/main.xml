@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.tipshelper.MainActivity" >
+    <item android:id="@+id/clear" android:icon="@drawable/ic_action_discard" android:title="clear" android:visible="true"
+          android:showAsAction="always">
+         
+    </item>
+    <item android:id="@+id/setting" android:title="Settings">
+    </item>
+    <item android:id="@+id/About" android:title="About"></item>
+
+</menu>
+<!-- From: file:/F:/AndroidStudioWorkspace/TipSplitCalc/app/src/main/res/menu/main.xml -->

@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutPpl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    tools:context="com.tools.tipsplitcalc.MainActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/buttonDefaultAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toLeftOf="@+id/buttonDefaultMinus"
+        android:onClick="onClick"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonDefaultMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDefaultAdd"
+        android:layout_alignBottom="@+id/buttonDefaultAdd"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:onClick="onClick"
+        android:text="-" />
+
+    <EditText
+        android:id="@+id/editTextDefaultTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/textViewDefaultTips"
+        android:layout_toLeftOf="@+id/textView1"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        android:text="15" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/buttonDefaultAdd"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewTaxHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextDefaultTax"
+        android:layout_below="@+id/buttonDefaultAdd"
+        android:layout_marginTop="20dp"
+        android:text="Tips Range:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDefaultTips"
+        android:layout_below="@+id/textViewTaxHint"
+        android:layout_marginTop="16dp"
+        android:text="Min:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewMin"
+        android:layout_alignBottom="@+id/textViewMin"
+        android:layout_alignLeft="@+id/editTextMax"
+        android:layout_toLeftOf="@+id/textView1"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        android:text="10" />
+
+    <Button
+        android:id="@+id/buttonMinMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextMin"
+        android:layout_toRightOf="@+id/buttonMinAdd"
+        android:onClick="onClick"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/textViewMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDefaultTips"
+        android:layout_below="@+id/buttonMinAdd"
+        android:layout_marginTop="31dp"
+        android:text="Max:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTextDefaultTax"
+        android:layout_alignTop="@+id/textViewMax"
+        android:layout_toRightOf="@+id/textViewMax"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number|numberDecimal"
+        android:text="30" />
+
+    <Button
+        android:id="@+id/buttonMaxAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonMinAdd"
+        android:layout_alignTop="@+id/editTextMax"
+        android:onClick="onClick"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/buttonMaxMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonMaxAdd"
+        android:layout_alignBottom="@+id/buttonMaxAdd"
+        android:layout_alignLeft="@+id/buttonMinMinus"
+        android:onClick="onClick"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/textViewDefaultTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Default Tips:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewDefaultTips"
+        android:layout_below="@+id/buttonMaxAdd"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/textViewMin"
+        android:onClick="onClick"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/buttonDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSave"
+        android:layout_alignBottom="@+id/buttonSave"
+        android:layout_alignLeft="@+id/buttonMaxAdd"
+        android:onClick="onClick"
+        android:text="Default" />
+
+    <Button
+        android:id="@+id/buttonMinAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextMin"
+        android:layout_toRightOf="@+id/textView1"
+        android:onClick="onClick"
+        android:text="+" />
+
+</RelativeLayout>
